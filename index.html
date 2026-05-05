@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GraamKhata</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <h1>🌿 GraamKhata</h1>
+    <p>Your village expense companion</p>
+</div>
+
+<!-- DASHBOARD CARD -->
+<div class="card banner">
+    <h2>Dashboard</h2>
+</div>
+
+<!-- TOTAL -->
+<div class="card">
+    <p>Total Spent</p>
+    <h2>₹<span id="total">0</span></h2>
+</div>
+
+<!-- ADD EXPENSE -->
+<div class="card">
+    <input id="desc" placeholder="Enter expense">
+    <input id="amount" type="number" placeholder="Amount">
+
+    <select id="category">
+        <option>Food</option>
+        <option>Travel</option>
+        <option>Farming</option>
+        <option>Other</option>
+    </select>
+
+    <button onclick="addExpense()">Add Expense</button>
+</div>
+
+<!-- LIST -->
+<div class="card">
+    <h3>Expenses</h3>
+    <ul id="list"></ul>
+</div>
+
+<!-- SUGGESTIONS -->
+<div class="card">
+    <h3>Smart Suggestions</h3>
+    <ul id="suggestions"></ul>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
